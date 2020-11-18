@@ -56,7 +56,7 @@
         
     /* for each article */
       const articles = document.querySelectorAll('.post'); 
-      for(let article of aricles){
+      for(let article of articles){
         let html = '';
 
         /* get the article id */
