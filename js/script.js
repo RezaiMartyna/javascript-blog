@@ -68,17 +68,17 @@
 
         /* create HTML of the link */
         const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
-        console.log(linkHtml);
+        console.log(linkHTML);
 
         /* insert link into titleList */
         titleList.innerHTML = titleList.innerHTML + linkHTML;
 
         /* insert link into html variable */
-        html = html+linkHtml;
+        html = html+linkHTML;
         console.log(html);
       }
       
-    titleList.innerHtml = html;
+    titleList.innerHTML = html;
     
   }
 
