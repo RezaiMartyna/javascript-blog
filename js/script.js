@@ -4,8 +4,6 @@
     const clickedElement = this;
     console.log('Link was clicked!');
     
-    
-  
     /* remove class 'active' from all article links  */
     const activeLinks = document.querySelectorAll('.titles a.active');
 
@@ -38,12 +36,7 @@
 
   }
   
-  const links = document.querySelectorAll('.titles a');
-  
-  for(let link of links){
-    link.addEventListener('click', titleClickHandler);
-  }
-
+ 
   const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles';
@@ -75,13 +68,17 @@
 
         /* insert link into html variable */
         html = html+linkHTML;
-        console.log(html);
+        
       }
-      
-    titleList.innerHTML = html;
+
+      titleList.innerHTML = html;
     
-  }
 
+      const links = document.querySelectorAll('.titles a');
+      for(let link of links){
+      link.addEventListener('click', titleClickHandler);
+    }
+    
+  } 
   generateTitleLinks();
-
 }
