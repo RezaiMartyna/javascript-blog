@@ -109,4 +109,36 @@ body {
 .post-tags p {
   margin: 0 10px 0 0;
 }
+
+/*tags*/
+.tag-size-1 {
+  color: pink;
+  font-size: 15px;
+}
+
+.tag-size-2 {
+  color: purple;
+  font-size: 20px;
+}
+
+.tag-size-3 {
+  color: red;
+  font-size: 25px;
+}
+
+.tag-size-4 {
+  color: orange;
+  font-size: 30px;
+}
+
+.tag-size-5 {
+  color: green;
+  font-size: 35px;
+}
+
+.tags li {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-right: 5px;
+}
 /*# sourceMappingURL=style.css.map */
